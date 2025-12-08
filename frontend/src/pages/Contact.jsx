@@ -38,7 +38,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium">Email</p>
-                                    <p className="text-gray-600">support@veggify.com</p>
+                                    <p className="text-gray-600">amulyask's@veggify.com</p>
                                 </div>
                             </div>
                             
@@ -48,7 +48,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium">Phone</p>
-                                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                                    <p className="text-gray-600">9980507235</p>
                                 </div>
                             </div>
                             
@@ -58,7 +58,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium">Address</p>
-                                    <p className="text-gray-600">123 Food Street, Culinary City, CC 12345</p>
+                                    <p className="text-gray-600">Vijayanagar,Hubli,Karnataka,India</p>
                                 </div>
                             </div>
                         </div>
