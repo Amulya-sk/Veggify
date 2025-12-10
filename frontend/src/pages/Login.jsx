@@ -29,6 +29,8 @@ const Login = () => {
         setError(data.message || 'Login failed.');
       } else {
         localStorage.setItem('token', data.token || 'logged-in');
+        // Dispatch event to update navbar auth state
+        window.dispatchEvent(new Event('authChange'));
         const qs = new URLSearchParams(location.search);
         const fromQuery = qs.get('from');
         const fromState = location.state && location.state.from ? location.state.from : null;

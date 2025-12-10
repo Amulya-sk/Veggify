@@ -81,7 +81,8 @@ const router = createBrowserRouter([
           const { params } = args;
           const gate = await requireAuth(args);
           if (gate) return gate;
-          const response = await fetch(`http://localhost:7000/api/items/${params.id}`);
+          const apiUrl = import.meta.env.VITE_API_URL || '/api';
+          const response = await fetch(`${apiUrl}/items/${params.id}`);
           if (!response.ok) {
             throw new Response("Not Found", { status: 404 });
           }
